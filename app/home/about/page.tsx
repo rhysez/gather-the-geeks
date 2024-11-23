@@ -15,7 +15,7 @@ const aboutTheDeveloper: string =
     `TypeScript and PHP. If I'm not coding or tinkering with a new project, I'm often gaming, reading a book or watching some of my favourite content creators.`
 
 const techStack: string =
-    `Gather The Geeks has been built using React (via Next.js) with TypeScript, TailwindCSS with components from shadcn. On the server, ` +
+    `Gather The Geeks has been built using React (via Next.js) with TypeScript, and TailwindCSS with components from shadcn. On the server, ` +
     `it uses Express with PostgreSQL. Icons are sourced from Heroicons, the developers behind Tailwind.`
 
 export default function Page() {
