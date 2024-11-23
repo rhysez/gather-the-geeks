@@ -8,7 +8,7 @@ export default function Page() {
             <section className={"flex justify-between"}>
                 <div>
                     <h2 className={"text-lightning_yellow font-bold text-4xl"}>
-                        Discover Blogs from other geeks.
+                        Discover blogs from other geeks.
                     </h2>
                     <p className={"opacity-75 italic text-2xl"}>...or write your own!</p>
                 </div>
