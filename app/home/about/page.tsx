@@ -1,13 +1,14 @@
 const aboutGtg: string =
     `Gather The Geeks is an open-source platform for software developers of call kinds (whether that be web, systems, games, you name it) ` +
-    `to organise meetups, socialise, network and generally just help each other to achieve their goals in this difficult job market we find ourselves in.`
+    `to organise meetups, socialise, post blogs and generally just help each other to achieve their goals in this difficult job market we find ourselves in.`
 
 const whyDoesThisExist: string =
     `During my job search as a web engineer, I realised that surrounding yourself with others in your niche really helps your own growth. ` +
     `If we think of a platform that allows us to network as developers, we will all think of LinkedIn. However, I find LinkedIn ` +
     `frustrating because it's hard to find genuine conversations that actually help people. So I decided to build Gather The Geeks ` +
     `as a space for developers specifically to connect. The focus of Gather The Geeks is real life meetups, because I think this ` +
-    `creates more meaningful connections and leads to more opportunities.`
+    `creates more meaningful connections and leads to more opportunities. However, you can also use Gather The Geeks as a means for posting ` +
+    `blogs or asking questions to other developers on the platform. Think of GTG as a combination of Reddit, StackOverfow, Dev.to and Meetup.com.`
 
 const aboutTheDeveloper: string =
     `My name is Rhys and I'm a full stack engineer based in the south of England. I really love working with languages like ` +
