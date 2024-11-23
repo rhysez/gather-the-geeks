@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import PrimaryNav from "@/components/layout/PrimaryNav";
 
 export const metadata: Metadata = {
   title: "Gather The Geeks",
@@ -13,10 +14,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}
-      >
-        {children}
-      </body>
+    <body className={`antialiased`}
+    >
+
+        <PrimaryNav/>
+        <main className={"px-2 md:px-24 py-8"}>
+            {children}
+        </main>
+
+
+    </body>
     </html>
   );
 }

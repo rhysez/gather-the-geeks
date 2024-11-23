@@ -12,7 +12,7 @@ export default function Page() {
                     </h2>
                     <p className={"opacity-75 italic text-2xl"}>...or write your own!</p>
                 </div>
-                <Link href={"/home/blogs/create"}>
+                <Link href={"/blogs/create"}>
                     <Button className={"bg-lighter_background text-foreground border-2 " +
                                         "border-neutral-600 font-bold text-lg hover:border-lightning_yellow"}>
                         Create a post
