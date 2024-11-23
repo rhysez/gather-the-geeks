@@ -13,7 +13,7 @@ export default {
   			background: 'var(--background)',
 			lighter_background: 'var(--lighter-background)',
 			lightning_yellow: 'var(--lightning-yellow)',
-  			foreground: 'hsl(var(--foreground))',
+  			foreground: 'var(--foreground)',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
