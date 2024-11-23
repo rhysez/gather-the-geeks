@@ -6,7 +6,9 @@ export default function HomeLayout({children}: Readonly<{
     return (
         <section>
             <PrimaryNav />
-            {children}
+            <main className={"p-4"}>
+                {children}
+            </main>
         </section>
     );
 }
