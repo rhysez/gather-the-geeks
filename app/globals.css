@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,9 +8,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#logo-main {
+  font-family: 'Trade Winds', system-ui;
+}
+
 @layer base {
   :root {
-    --background: 240 10% 3.9%;
+    --background: #212121;
+    --lighter-background: #2b2b2b;
+    --lightning-yellow: #d9ae41;
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;

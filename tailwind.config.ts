@@ -10,7 +10,9 @@ export default {
   theme: {
   	extend: {
   		colors: {
-  			background: 'hsl(var(--background))',
+  			background: 'var(--background)',
+			lighter_background: 'var(--lighter-background)',
+			lightning_yellow: 'var(--lightning-yellow)',
   			foreground: 'hsl(var(--foreground))',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
