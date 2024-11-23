@@ -11,7 +11,11 @@ const whyDoesThisExist: string =
 
 const aboutTheDeveloper: string =
     `My name is Rhys and I'm a full stack engineer based in the south of England. I really love working with languages like ` +
-    `TypeScript and PHP. If I'm not coding or tinkering with a new project, I'm often gaming or watching some of my favourite content creators.`
+    `TypeScript and PHP. If I'm not coding or tinkering with a new project, I'm often gaming, reading a book or watching some of my favourite content creators.`
+
+const techStack: string =
+    `Gather The Geeks has been built using React (via Next.js), TailwindCSS with components from shadcn on the client. On the server, ` +
+    `it uses Express with PostgreSQL.`
 
 export default function Page() {
     return (
@@ -32,6 +36,12 @@ export default function Page() {
                 <h2 className={"text-lightning_yellow font-bold text-3xl text-center"}>About the developer</h2>
                 <section>
                     <p className={"opacity-75"}>{aboutTheDeveloper}</p>
+                </section>
+            </article>
+            <article className={"space-y-4"}>
+                <h2 className={"text-lightning_yellow font-bold text-3xl text-center"}>What tech stack does GTG use?</h2>
+                <section>
+                    <p className={"opacity-75"}>{techStack}</p>
                 </section>
             </article>
         </main>
