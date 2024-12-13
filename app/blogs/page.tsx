@@ -32,6 +32,7 @@ export default async function Page() {
                         posts?.map((post: Post) => {
                             return (
                                 <BlogCard
+                                    id={post.id}
                                     title={post.title}
                                     author={post.author}
                                     key={post.id}
