@@ -2,16 +2,10 @@ import BlogCard from "@/components/blogs/BlogCard";
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
 import { Post } from "@/lib/types";
+import { getPosts } from "@/lib/data";
 
 export default async function Page() {
-    const posts: Post[] = [
-        {
-            title: "Some title",
-            content: "Some content",
-            author: "Some author",
-            likes: 0
-        }
-    ]
+    const posts: Post[] = await getPosts()
     console.log(posts)
 
     return (
@@ -35,7 +29,7 @@ export default async function Page() {
                 <h4 className={"text-2xl my-2 font-bold"}>Latest blogs...</h4>
                 <article className={"space-y-4"}>
                     {
-                        posts.length ? posts.slice(0, 6).map((post: Post) => {
+                        posts?.map((post: Post) => {
                             return (
                                 <BlogCard
                                     title={post.title}
@@ -43,7 +37,7 @@ export default async function Page() {
                                     key={post.id}
                                 />
                             )
-                        }) : <p>No posts to display</p>
+                        })
                     }
                 </article>
             </section>

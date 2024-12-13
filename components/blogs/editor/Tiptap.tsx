@@ -4,6 +4,7 @@ import { useEditor, EditorContent } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
 import { Button } from '@/components/ui/button'
 import { Post } from '@/lib/types'
+import { createPost } from '@/lib/actions'
 
 const Tiptap = () => {
   const editorTitle = useEditor({
@@ -39,7 +40,7 @@ const Tiptap = () => {
         className="bg-lighter_background p-6 rounded-sm" 
       />
       <section className="mt-2 flex justify-end">
-        <Button onClick={() => console.log(post)} className="bg-lightning_yellow hover:opacity-50 transition-all rounded-sm">Submit post</Button>
+        <Button onClick={() => createPost(post)} className="bg-lightning_yellow hover:opacity-50 transition-all rounded-sm">Submit post</Button>
       </section>
     </main>
   )
