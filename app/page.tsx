@@ -13,17 +13,14 @@ export default function Home() {
               <BlogCard
                   title={"I decided to finally try TypeScript!"}
                   author={"Jim Dobbins"}
-                  timestamp={"13:52 on Friday, 15th November"}
               />
               <BlogCard
                   title={"How to dockerize Express apps"}
                   author={"Jim Dobbins"}
-                  timestamp={"13:52 on Friday, 15th November"}
               />
               <BlogCard
                   title={"Why I think a good network wins over any resume"}
                   author={"Jim Dobbins"}
-                  timestamp={"13:52 on Friday, 15th November"}
               />
           </section>
 

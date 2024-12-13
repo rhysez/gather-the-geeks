@@ -1,8 +1,13 @@
 import BlogCard from "@/components/blogs/BlogCard";
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
+import { getPosts } from "@/lib/data";
+import { Post } from "@/lib/types";
 
-export default function Page() {
+export default async function Page() {
+    const posts: Post[] = await getPosts();
+    console.log(posts)
+
     return (
         <main>
             <section className={"flex justify-between"}>
@@ -23,21 +28,17 @@ export default function Page() {
             <section className={"mt-12"}>
                 <h4 className={"text-2xl my-2 font-bold"}>Latest blogs...</h4>
                 <article className={"space-y-4"}>
-                    <BlogCard
-                        title={"I decided to finally try TypeScript!"}
-                        author={"Jim Dobbins"}
-                        timestamp={"13:52 on Friday, 15th November"}
-                    />
-                    <BlogCard
-                        title={"How to dockerize Express apps"}
-                        author={"Jim Dobbins"}
-                        timestamp={"13:52 on Friday, 15th November"}
-                    />
-                    <BlogCard
-                        title={"Why I think a good network wins over any resume"}
-                        author={"Jim Dobbins"}
-                        timestamp={"13:52 on Friday, 15th November"}
-                    />
+                    {
+                        posts.length ? posts.slice(0, 6).map((post: Post) => {
+                            return (
+                                <BlogCard
+                                    title={post.title}
+                                    author={post.author}
+                                    key={post.id}
+                                />
+                            )
+                        }) : <p>No posts to display</p>
+                    }
                 </article>
             </section>
         </main>
