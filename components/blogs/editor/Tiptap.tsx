@@ -28,6 +28,8 @@ const Tiptap = () => {
     author: "Rhys",
     likes: 0
   }
+  
+  console.log(post)
 
   return (
     <main className="space-y-2">
