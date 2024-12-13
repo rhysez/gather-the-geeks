@@ -1,11 +1,17 @@
 import BlogCard from "@/components/blogs/BlogCard";
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
-import { getPosts } from "@/lib/data";
 import { Post } from "@/lib/types";
 
 export default async function Page() {
-    const posts: Post[] = await getPosts();
+    const posts: Post[] = [
+        {
+            title: "Some title",
+            content: "Some content",
+            author: "Some author",
+            likes: 0
+        }
+    ]
     console.log(posts)
 
     return (
