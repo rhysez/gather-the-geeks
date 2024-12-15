@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: 'Noto Serif', Arial, Helvetica, sans-serif;
+  font-family: 'JetBrains Mono', Arial, Helvetica, sans-serif;
 }
 
 @layer base {
   :root {
-    --background: #212121;
-    --lighter-background: #2b2b2b;
-    --lightning-yellow: #d9ae41;
+    --background: #0f172a;
+    --lighter-background: #1e293b;
+    --sea-mist: #cbd5e1;
     --foreground: #cfcccc;
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
