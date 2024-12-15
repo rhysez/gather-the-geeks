@@ -35,7 +35,7 @@ export default function MeetupCard({
                 <p>dev type: <span className="text-[#6ee7b7]">{developerType}</span></p>
             </CardContent>
             <CardFooter className="flex space-x-2">
-                <Button className="bg-sea_mist">View</Button>
+                <Button className="bg-sea_mist hover:bg-rose_red hover:text-sea_mist">View</Button>
             </CardFooter>
         </Card>
 

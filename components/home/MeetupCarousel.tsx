@@ -12,11 +12,11 @@ type MeetupCarouselProps = {meetups: any[]}
 export default function MeetupCarousel({meetups}: MeetupCarouselProps) {
     return (
         <Carousel>
-            <CarouselContent>
+            <CarouselContent className="hover:cursor-grab active:cursor-grabbing">
                 {
                     meetups.map(meetup => {
                         return (
-                            <CarouselItem className="basis-1/3">
+                            <CarouselItem className="basis-1/4">
                                 <MeetupCard
                                     key={meetup.title}
                                     title={meetup.title}
