@@ -22,25 +22,25 @@ export default function Page() {
     return (
         <main className={"space-y-12 lg:w-1/2 md:w-[75%] mx-auto mt-6"}>
             <article className={"space-y-4"}>
-                <h2 className={"text-lightning_yellow font-bold text-3xl text-center"}>What is Gather The Geeks?</h2>
+                <h2 className={"text-sea_mist font-bold text-3xl text-center"}>What is Gather The Geeks?</h2>
                 <section>
                     <p className={"opacity-75"}>{aboutGtg}</p>
                 </section>
             </article>
             <article className={"space-y-4"}>
-                <h2 className={"text-lightning_yellow font-bold text-3xl text-center"}>Why does this exist?</h2>
+                <h2 className={"text-sea_mist font-bold text-3xl text-center"}>Why does this exist?</h2>
                 <section>
                     <p className={"opacity-75"}>{whyDoesThisExist}</p>
                 </section>
             </article>
             <article className={"space-y-4"}>
-                <h2 className={"text-lightning_yellow font-bold text-3xl text-center"}>About the developer</h2>
+                <h2 className={"text-sea_mist font-bold text-3xl text-center"}>About the developer</h2>
                 <section>
                     <p className={"opacity-75"}>{aboutTheDeveloper}</p>
                 </section>
             </article>
             <article className={"space-y-4"}>
-                <h2 className={"text-lightning_yellow font-bold text-3xl text-center"}>What tech stack does GTG use?</h2>
+                <h2 className={"text-sea_mist font-bold text-3xl text-center"}>What tech stack does GTG use?</h2>
                 <section>
                     <p className={"opacity-75"}>{techStack}</p>
                 </section>
