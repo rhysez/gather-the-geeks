@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card"
 import { Button } from "../ui/button"
   
-type MeetupCardProps = {
+type MeetupCardCompactProps = {
     title: string;
     description: string;
     location: string;
@@ -17,14 +17,14 @@ type MeetupCardProps = {
     displayOnly: boolean;
 }
 
-export default function MeetupCard({
+export default function MeetupCardCompact({
     title,
     description,
     location,
     intendedFor,
     type,
     displayOnly
-}: MeetupCardProps) {
+}: MeetupCardCompactProps) {
     return (
         <Card className="w-fit bg-lighter_background">
             <CardHeader>
