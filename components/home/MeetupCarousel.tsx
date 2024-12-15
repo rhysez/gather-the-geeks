@@ -1,3 +1,4 @@
+'use client'
 import {
     Carousel,
     CarouselContent,
@@ -5,18 +6,28 @@ import {
     CarouselNext,
     CarouselPrevious,
   } from "@/components/ui/carousel"
-import MeetupCard from "../meetups/MeetupCard"  
+import MeetupCard from "../meetups/MeetupCard"
+import Autoplay from "embla-carousel-autoplay"
 
 type MeetupCarouselProps = {meetups: any[]}
 
 export default function MeetupCarousel({meetups}: MeetupCarouselProps) {
     return (
-        <Carousel>
+        <Carousel 
+            opts={{
+                align: "start",
+                loop: true,
+            }}
+            plugins={[
+                Autoplay({
+                delay: 3000,
+                }),
+            ]}>
             <CarouselContent className="hover:cursor-grab active:cursor-grabbing">
                 {
                     meetups.map(meetup => {
                         return (
-                            <CarouselItem className="basis-1/4">
+                            <CarouselItem className="lg:basis-1/4 md:basis-1/2 basis-1/1">
                                 <MeetupCard
                                     key={meetup.title}
                                     title={meetup.title}

@@ -20,12 +20,12 @@ export default async function Page() {
           people<span className="text-cherry_red">.</span>
         </h1>
         <p className="text-center opacity-75 lg:text-xl md:text-base text-sm">
-          gather the geeks helps your find and collaborate with other devs
+          gather the geeks helps you find and collaborate with other devs
           <span className="text-cherry_red">.</span>
         </p>
       </article>
       <section className="mt-24 space-y-8">
-        <p className="text-center text-lg">Latest meetups posted...</p>
+        <p className="text-center text-lg">latest meetups posted on gtg...</p>
         <MeetupCarousel meetups={meetups} />
       </section>
     </main>

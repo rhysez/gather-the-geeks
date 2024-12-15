@@ -24,7 +24,7 @@ export default function MeetupCard({
     meetupType
 }: MeetupCardProps) {
     return (
-        <Card className="w-fit">
+        <Card className="w-fit bg-lighter_background">
             <CardHeader>
                 <CardTitle className="text-2xl text-rose_red">{title}</CardTitle>
                 <CardDescription>{description.slice(0, 40) + "..."}</CardDescription>
