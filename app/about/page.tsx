@@ -1,18 +1,14 @@
 const aboutGtg: string =
     `Gather The Geeks is an open-source platform for software developers of call kinds (whether that be web, systems, games, you name it) ` +
-    `to organise meetups, socialise, post blogs and generally just help each other to achieve their goals in this difficult job market we find ourselves in.`
+    `to organise meetups for any purpose. This could be to simply have fun at a hackathon, broaden your network with a talk, or anything else.`
 
 const whyDoesThisExist: string =
-    `During my job search as a web engineer, I realised that surrounding yourself with others in your niche really helps your own growth. ` +
-    `If we think of a platform that allows us to network as developers, we will all think of LinkedIn. However, I find LinkedIn ` +
-    `frustrating because it's hard to find genuine conversations that actually help people. So I decided to build Gather The Geeks ` +
-    `as a space for developers specifically to connect. The focus of Gather The Geeks is real life meetups, because I think this ` +
-    `creates more meaningful connections and leads to more opportunities. However, you can also use Gather The Geeks as a means for posting ` +
-    `blogs or asking questions to other developers on the platform. Think of GTG as a combination of Reddit, StackOverfow, Dev.to and Meetup.com.`
+    `I wanted to create something specifically for developers that can serve a similar purpose to Meetup.com. ` +
+    `At the same time, I really wanted to start an open-source project. So I put the two together and created Gather The Geeks.`
 
 const aboutTheDeveloper: string =
     `My name is Rhys and I'm a full stack engineer based in the south of England. I really love working with languages like ` +
-    `TypeScript and PHP. If I'm not coding or tinkering with a new project, I'm often gaming, reading a book or watching some of my favourite content creators.`
+    `TypeScript and PHP. If I'm not coding or tinkering with a new project, I'm often gaming, hitting the gym or reading a book.`
 
 const techStack: string =
     `Gather The Geeks has been built using React (via Next.js) with TypeScript, and TailwindCSS with components from shadcn. On the server, ` +

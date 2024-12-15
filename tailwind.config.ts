@@ -13,6 +13,8 @@ export default {
   			background: 'var(--background)',
 			lighter_background: 'var(--lighter-background)',
 			sea_mist: 'var(--sea-mist)',
+			cherry_red: 'var(--cherry-red)',
+			rose_red: 'var(--rose-red)',
   			foreground: 'var(--foreground)',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
