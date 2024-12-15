@@ -12,16 +12,18 @@ type MeetupCardProps = {
     title: string;
     description: string;
     location: string;
-    developerType: string;
-    meetupType: string;
+    intendedFor: string;
+    type: string;
+    displayOnly: boolean;
 }
 
 export default function MeetupCard({
     title,
     description,
     location,
-    developerType,
-    meetupType
+    intendedFor,
+    type,
+    displayOnly
 }: MeetupCardProps) {
     return (
         <Card className="w-fit bg-lighter_background">
@@ -31,12 +33,17 @@ export default function MeetupCard({
             </CardHeader>
             <CardContent className="flex-col items-start">
                 <p>location: <span className="text-[#a78bfa]">{location}</span></p>
-                <p>type: <span className="text-[#fdba74]">{meetupType}</span></p>
-                <p>intended for: <span className="text-[#6ee7b7]">{developerType}</span></p>
+                <p>type: <span className="text-[#fdba74]">{type}</span></p>
+                <p>intended for: <span className="text-[#6ee7b7]">{intendedFor}</span></p>
             </CardContent>
-            <CardFooter className="flex space-x-2">
-                <Button className="bg-sea_mist hover:bg-rose_red hover:text-sea_mist">View</Button>
-            </CardFooter>
+            {
+                !displayOnly ?
+                    <CardFooter className="flex space-x-2">
+                        <Button className="bg-sea_mist hover:bg-rose_red hover:text-sea_mist">View</Button>
+                    </CardFooter>
+                    :
+                    null
+            }
         </Card>
 
     )

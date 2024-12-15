@@ -2,6 +2,6 @@
 
 export default function Page() {
     return (
-        <p>Meetups route</p>
+        <p className="mt-24">Meetups route</p>
     )
 }

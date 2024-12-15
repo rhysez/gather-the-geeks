@@ -33,8 +33,9 @@ export default function MeetupCarousel({meetups}: MeetupCarouselProps) {
                                     title={meetup.title}
                                     description={meetup.description}
                                     location={meetup.location}
-                                    developerType={meetup.developerType}
-                                    meetupType={meetup.meetupType}
+                                    intendedFor={meetup.intendedFor}
+                                    type={meetup.type}
+                                    displayOnly={true}
                                 />
                             </CarouselItem>
                         )
