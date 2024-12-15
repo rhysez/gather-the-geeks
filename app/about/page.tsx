@@ -16,7 +16,7 @@ const techStack: string =
 
 export default function Page() {
     return (
-        <main className={"space-y-12 lg:w-1/2 md:w-[75%] mx-auto mt-6"}>
+        <main className={"space-y-12 lg:w-1/2 md:w-[75%] mx-auto mt-24"}>
             <article className={"space-y-4"}>
                 <h2 className={"text-sea_mist font-bold text-3xl text-center"}>What is Gather The Geeks?</h2>
                 <section>
