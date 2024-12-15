@@ -7,7 +7,7 @@ export default function PrimaryNav() {
             <Link className={"hover:opacity-50 transition-all"} href={"/"}>
                 <section className={"flex items-center gap-2"}>
                     <h2 className={"text-sea_mist font-bold text-2xl"}>gather the geeks.</h2>
-                    <CommandLineIcon className={"w-8 h-8 text-[#dc2626]"} />
+                    <CommandLineIcon className={"w-8 h-8 text-[#ef4444]"} />
                 </section>
             </Link>
             <section className={"space-x-6"}>
